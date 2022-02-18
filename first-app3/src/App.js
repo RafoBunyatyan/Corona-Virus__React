@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import './App.css';
 import Home from './Components/Home';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Theme from './Components/context';
 
 function App() {
@@ -17,11 +16,7 @@ function App() {
 
   return (
     <>
-      <Router>
-          <Route path="/home">
-            <Home />
-          </Route>
-      </Router>
+        <Home />
     </>
   );
 };
